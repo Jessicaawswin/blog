@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica's page</title>
+    <style>
+        /* 父容器：开启Flex布局 */
+        .container {
+          display: flex; /* 子元素横向排列 */
+          align-items: flex-start;  /* 垂直居中对齐（可选，让文字和图片中线对齐） */
+          gap: 20px; /* 文字和图片之间的间距（可选） */
+          /* 可选：让内容整体居中 */
+          margin: 20px 0;
+        }
+        
+        .container img {
+          width: 200px; /* 图片宽度 */
+          height: auto; /* 高度自动，保持比例 */
+        }
+
+    
+        
+        .image-wrapper {
+            width: 200px; /* 与图片宽度一致，确保链接居中 */
+        }
+
+        .image-wrapper img {
+            width: 200px;
+            height: auto;
+            display: block; /* 消除图片底部默认空白 */
+        }
+
+        .stars-group {
+          display: flex;
+          gap: 8px;
+          margin: 10px 0; /* 星星上下间距 */
+        }
+        
+        .image-link {
+            display: block; /* 独占一行，确保在图片正下方 */
+            text-align: center; /* 链接文字居中 */
+            margin-top: 8px; /* 图片与链接的间距 */
+            color: #2c3e50; /* 链接颜色 */
+            text-decoration: none; /* 去除默认下划线 */
+            font-size: 14px;
+        }
+
+        .right-content {
+          flex: 1; /* 占剩余宽度，避免文字过窄 */
+        }
+
+        /* 单个星星 */
+        .star {
+          width: 40px;
+          height: 30px;
+          background: #ffd700;
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        
+        .star:hover {
+          background: #ff0000;
+          transform: scale(1.1);
+          transition: all 0.2s;
+        }
+
+        /* 文字通用样式 */
+        .text {
+          font-size: 18px;
+          font-family: "微软雅黑";
+        }
+        .content-block {
+          margin: 15px 0; /* 上下各15px间距，避免内容挤在一起 */
+        }
+        
+        
+        </style>
+    
+</head>
+<body>
+    <p style="color: white;">id="top"</p>
+    <h1>你好! hello! Hola! こんにちは! Bonjour! Ciao!</h1>
+    <h2>欢迎来到我的channel!</h2>
+    <p style="font-family: 'Microsoft YaHei', 微软雅黑, sans-serif;font-size: 18px;color: aqua;font-weight: 400;line-height: 1.6;"><b>这是我的个人简介</b></p>
+    <p style="font-family: 'SimSun', 宋体; font-size: 18px; color: #333; font-weight: 500; line-height: 1.6;">
+ 我 是 一个 21 岁 的 人类,和大多数人一样,我有自己的热爱。<br>我喜欢运动,特别喜欢打篮球;我喜欢听各式各样的声音,比如洞洞鞋踩上落叶时清脆的声响，更不用说篮球空心刷网的声音，当我注意到这些声音时，我总会意识到有美好事物正在发生。
+ <br>在我所有的爱好中,我一直坚持到现在的是打篮球和当一个二次元。<br>我热爱篮球,对球星却是不太了解,但我当了十年的二次元,倒是可以对我看过的作品评个极。
+</p>
+    <p style="margin-top: 0;font-family: '宋体';color: rgb(196, 23, 23);font-weight: bold;font-size: 30px;"><i>话不多说，直接开始</i></p>
+    
+    
+
+</body>
+<h2><b>1.海贼王(onepiece)</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+ <img src="./image/onepiece.jpg" alt="hh">
+ <a href="https://baike.baidu.com/item/%E8%88%AA%E6%B5%B7%E7%8E%8B/75861?fromtitle=%E6%B5%B7%E8%B4%BC%E7%8E%8B&fromid=8904" class="image-link" target="_blank">点击详情</a>
+  </div>
+  <div class="right-content">
+   <b>推荐指数</b>
+   <div class="stars-group">
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+   </div>
+   <div class="content-block">
+    <b>剧情梗概</b><br>
+    路飞怀揣成为海贼王的梦想，因误食橡胶果实获得橡胶能力，从东海出发。他沿途招募索隆、娜美等伙伴，组成草帽海贼团。众人穿越伟大航路，对抗海军与敌对海贼，历经无数热血战斗与冒险，一边追寻 “One Piece” 秘宝，一边逐步揭开世界政府隐藏的真相。
+</div>
+
+<div class="content-block">
+    <b>推荐理由</b><br>
+    世界观的庞大令人汗颜，有着流畅的剧情以及惊人的伏笔，作者对主角路飞的爱以及对其他角色的爱清晰可见，包含对友情、亲情、爱情、梦想以及对人类解放的深刻探讨，冒险故事精彩绝伦，作者想象力及其丰富，整体风格诙谐有趣。作品前期主要描写路飞一行人的冒险故事，现在主线故事已经接近尾声，作者有意把故事的主旨往全人类的解放以及和平方向上靠，“one piece”的真相令所有海米期待。身处一望无际的大海上，我们终将能遇到独属于自己的冒险，遇到真正的伙伴。
+</div>
+  </div>
+</div>
+
+<h2><b>2.血界戦線</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/xuejie.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E8%A1%80%E7%95%8C%E6%88%98%E7%BA%BF/14077992" class="image-link" target="_blank">点击详情</a>
+  </div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     《血界战线》讲述纽约崩坏后变成“赫尔沙雷姆兹·罗特”，这里连接异世界，危机四伏。秘密结社莱布拉致力于维持世界平衡，少年雷欧为帮妹妹恢复视力加入其中，与伙伴们一同应对各类超自然危机。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     作品由单元剧构成，但单元剧背后却隐含着主线故事，动画节奏轻快，bgm匹配画面内容，看完一集仍意犹未尽，你永远可以相信骨头社的制作。同时作者讲故事的能力很优秀，故事背景中的纽约经历“大崩坏”后变得无序疯狂，身处这样一座城市，每天都得考虑自己的生命安危，但作者却描绘出一番即使在混乱中依旧保持初心、依旧热爱生活、依旧用善意拥抱世界的画面，伴着悠扬的爵士乐曲，明天又是新的一天。
+ </div>
+   </div>
+ </div>
+ 
+ <h2><b>3.强风吹拂</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/qiangfeng.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82/22621985" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     《强风吹拂》围绕宽政大学竹青庄的十位学生展开，在队长清濑灰二的推动下，这群 “门外汉” 组成长跑队，冲击日本经典赛事箱根驿传。他们熬过严苛训练，战胜自身疑虑与外界质疑，最终虽未获前十，却都突破极限，读懂了跑步与团队的意义。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     作品制作精良，对角色的心理描写十分细腻，在这番激情之下，看完让人直想跑步。“箱根山岳险天下”，人生如马拉松，剧中的主角却坚持去征服。在一生中我们总会遇到一件事让你付出所有却甘之如饴，总会有一个瞬间找到自己的至高点，如果遇到那瞬间的降临，一定要好好把握这个机会。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>4.全职猎人(hunter)</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/hunter.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E5%85%A8%E8%81%8C%E7%8C%8E%E4%BA%BA/27763" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+12岁少年小杰在鲸鱼岛长大，得知父亲金是猎人后，决心参加猎人考试寻父。考试中，他结识酷拉皮卡、雷欧力与奇犽，四人成为挚友。他们历经多重严苛考验，在战斗中习得“念”能力，共同应对幻影旅团、嵌合蚁等危机。小杰始终追寻父亲踪迹，众人也在旅程中实现自我成长，故事围绕冒险、友谊与成长展开。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     作品有着严谨的战斗体系，丰富的智斗片段以及对人性的探讨，对之后的动漫作品有着及其深远的影响，20多年前的设定放在现在依旧时髦。同时作品对“猎人”主旨的深入也一直贯穿作品全部，虽然作者因为伤病迟迟无法更新，但人们总会被这部作品吸引。剧情分镜和画面一切都是水到渠成，可惜故事的很多伏笔还未能回收，只能静静期待后续故事的展开。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>5.夏日重现</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/summer.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E5%A4%8F%E6%97%A5%E9%87%8D%E7%8E%B0/55962985" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     网代慎平因青梅竹马小舟潮之死，回到故乡日都岛奔丧。他发现潮的死因可疑，岛上还存在会杀人并取代本体的“影子”，且自己陷入了死亡轮回。
+
+慎平在不断轮回中积累信息，与潮的妹妹澪及影子潮等伙伴联手，揭露了影子背后复活“蛭子神”的百年阴谋，最终打败反派，修正历史，结束循环，拯救了岛屿。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     《夏日重现》是悬疑轮回题材的高分佳作，剧情紧凑无拖沓。主角慎平的死亡轮回不是简单重复，每次循环都有新线索与反转，影子杀人、身份替换的设定层层嵌套，悬念感拉满。角色塑造立体，无论是为救岛拼尽全力的慎平，还是立场复杂的影子潮，都极具魅力。战斗场面爽快，情感线细腻不突兀，结局既圆满又留有余味，能让你沉浸式体验悬疑与热血交织的海岛冒险。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>6.博多豚骨拉面团</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/boduo.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E5%8D%9A%E5%A4%9A%E8%B1%9A%E9%AA%A8%E6%8B%89%E9%9D%A2%E5%9B%A2/22244931" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     福冈博多暗藏地下秩序，约三成人口是杀手。女装杀手林宪明为赎身寻妹受雇于 “华九会”，却因组织背刺转而保护目标 —— 侦探马场善治。二人携手黑客榎田等伙伴，卷入市长势力与黑手党的阴谋，在接连的刺杀与反击中，揭开妹妹惨死的真相，共同对抗各方追杀。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     《博多豚骨拉面团》以 “美食名” 掩 “暗黑骨”，设定极具新意。博多街头杀手云集的设定张力拉满，女装杀手、神秘侦探等角色性格鲜明立体。多线剧情交织推进，伏笔回收巧妙，从市长黑幕到组织恩怨，节奏紧凑无拖沓。战斗场面干脆利落，伙伴间的羁绊刻画细腻，既有悬疑反转的刺激，也有团队协作的热血，打破题材套路，观感十足。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>6.fate zero</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/fate.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/Fate%2FZero/27485?fromModule=lemma_search-box" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     《Fate/Zero》讲述第四次圣杯战争的故事，发生在《Fate/stay night》十年前。爱因兹贝伦家族雇佣 “魔术师杀手” 卫宫切嗣，与其他六位魔术师一同召唤英灵，争夺能实现愿望的圣杯。切嗣在对妻女的温情与冷酷的执念间挣扎，与探寻存在意义的言峰绮礼等对手交锋，上演了一场理想与宿命的残酷厮杀。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     作为型月宇宙的 “登月飞船”，《Fate/Zero》是悬疑与哲思交织的巅峰之作。虚渊玄以成熟笔触刻画群像，卫宫切嗣的矛盾、英灵们的执念皆立体鲜活，无智商掉线情节。UFOTable 的精良制作搭配梶浦由记的配乐，战斗场面极具张力。它不止是圣杯战争的厮杀，更借角色命运探讨理想与牺牲的重量，每段理念碰撞都引人深思，堪称一部关于 “人” 的伟大史诗。
+ </div>
+   </div>
+ </div>
+
+<h2><b>7.十二国记</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/shier.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E5%8D%81%E4%BA%8C%E5%9B%BD%E8%AE%B0/53358" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     女高中生中岛阳子被卷入异世界，这里由十二个国王与麒麟共治。她从迷茫怯懦的 “海客”，在经历背叛、战争与统治危机后，觉醒为庆国之王 “景王”。阳子一边对抗叛乱势力，一边学习治国之道，最终成长为能守护国民的合格君主，也找到自我价值。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     《十二国记》是异世界题材的 “反套路” 神作，摒弃常见爽文模式，聚焦主角的成长与治国理想。阳子从普通人到君王的蜕变真实细腻，无天降光环，满是现实困境与抉择。剧情融合政治、历史与奇幻元素，对 “王与民”“责任与权力” 的探讨深刻，世界观宏大且逻辑自洽。动画节奏沉稳，角色塑造立体，看完能引发对自我与责任的思考，极具深度。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>8.火影忍者(naruto)</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/Naruto.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85/8702" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     孤儿鸣人梦想成为火影，以获得全村认可。他与佐助、小樱组成小队，在卡卡西带领下执行任务，成长为忍者。佐助因家族灭门之仇离村，鸣人立誓将他带回。此后鸣人历经多次大战，解锁九尾力量，领悟 “忍道”，最终不仅实现火影梦，还化解忍界仇恨，让世界走向和平。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     《火影忍者》是承载一代人青春的热血经典。剧情围绕 “梦想” 与 “羁绊” 展开，鸣人永不放弃的精神极具感染力。角色群像塑造成功，每个配角都有独特故事与执念，如佐助的挣扎、卡卡西的过往。战斗场面热血沸腾，忍术设定丰富，且剧情中穿插的温情与成长，能让人共情。它不止是忍者的冒险，更传递了坚持、友情与守护的力量，影响深远。“勇往直前，说到做到”这就是我的忍道。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>9.干物妹！小埋</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/umr.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E5%B9%B2%E7%89%A9%E5%A6%B9%EF%BC%81%E5%B0%8F%E5%9F%8B/16392031?fromModule=lemma_search-box" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     在外是完美高中生的土间埋，回家后秒变 “干物妹”，穿着仓鼠服吃零食、打游戏，全靠哥哥太平照顾。故事围绕小埋的 “双面生活” 展开，她与哥哥的日常温馨搞笑，也记录了她和朋友海老名、希尔芬的校园互动，展现了轻松治愈的兄妹情与友情
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     《干物妹小埋》是解压治愈的日常番佳作。小埋 “在外女神、在家废柴” 的反差萌极具笑点，完美戳中当代人 “人前精致、人后放松” 的状态，代入感极强。动画节奏轻松明快，没有复杂剧情，满是兄妹间的温馨互动与校园趣事。画风清新可爱，角色性格讨喜，能让人在忙碌生活中放松心情，感受平凡日常的治愈力量，适合闲暇时观看。
+ </div>
+   </div>
+ </div>
+
+ <h2><b>10.鬼灯的冷彻</b></h2>
+<div class="container">
+  <div class="image-wrapper">
+  <img src="./image/guideng.jpg" alt="hh">
+  <a href="https://baike.baidu.com/item/%E9%AC%BC%E7%81%AF%E7%9A%84%E5%86%B7%E5%BD%BB/9863654" class="image-link" target="_blank">点击详情</a>
+</div>
+   <div class="right-content">
+    <b>推荐指数</b>
+    <div class="stars-group">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      
+      
+    </div>
+    <div class="content-block">
+     <b>剧情梗概</b><br>
+     阎魔殿第一辅佐官鬼灯，是地狱里冷酷高效的管理者。他日常处理地狱事务，纠正阎魔大王的失误，还会用各种脑洞大开的方式整顿地狱秩序。故事穿插鬼灯与希腊神话、埃及神话等神明的互动，以及他过往经历的回忆，展现了一个诙谐又有序的地狱世界。
+ </div>
+ 
+ <div class="content-block">
+     <b>推荐理由</b><br>
+     《鬼灯的冷彻》是充满黑色幽默的奇幻喜剧。以地狱为舞台却毫无阴森感，反而用密集的笑点与文化梗让人捧腹。鬼灯冷静毒舌的性格与反差萌行为（如喜欢熊猫）极具魅力，配角也各有特色。动画融合各国神话传说，科普地狱制度的同时不失趣味，剧情轻松无负担，既适合放松心情，又能让人了解不同文化元素，笑点与知识点兼备，观感独特。
+ </div>
+   </div>
+ </div>
+ <a href="#top">back to top</a>
+</html>
